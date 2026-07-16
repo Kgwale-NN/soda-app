@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "ano-regular";
+    src: url('./assets/fonts/Ano-Regular/Ano-Regular.otf') format('otf');
+}
+
+@font-face {
+    font-family:"windsorEF" ;
+    src: url("./assets/fonts/windsoref/windsoref-extraboldcondensed.woff") format('woff');
+}
+p{
+    font-family: "ano-regular";
+}
+
+h1,h2,h3{
+    font-family: "windsorEF";
+}
 body{
     font-family: Arial;
     overflow-x: hidden;

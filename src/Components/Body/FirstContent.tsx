@@ -20,8 +20,8 @@ export const FirstContent = () => {
 
        <div className={styles['first-cont']}>
 
-      <Text variant='h1' style={{fontSize:80 ,color:'rgb(13, 53, 13)', fontFamily:'sans-serif'}}>A New Kind</Text>
-      <Text variant='h1' style={{fontSize:80 ,color:'rgb(13, 53, 13)', fontFamily:'sans-serif'}}>of Soda</Text>
+      <Text variant='h1' style={{fontSize:80 ,color:'rgb(13, 53, 13)'}}>A New Kind</Text>
+      <Text variant='h1' style={{fontSize:80 ,color:'rgb(13, 53, 13)'}}>of Soda</Text>
       <Button value='Shop OLIPOP' type='Button' className={styles.button} />
       
 
