@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Footer.module.css'
 import { ContentContainer } from '../ContentContainer'
 import logo from  '../../assets/Logo.webp'
@@ -62,7 +61,7 @@ export const Footer = () => {
         <Text variant='p' style={{color:'rgb(13, 53, 13)'}}>Classic Root Beer</Text>
         <Text variant='p' style={{color:'rgb(13, 53, 13)'}}>Doctor Goodwin</Text>
         <Text variant='p' style={{color:'rgb(13, 53, 13)'}}>Banana Cream</Text>
-        <Text variant='p' style={{color:'rgb(13, 53, 13)'}}>Strewberry Vanilla</Text>
+        <Text variant='p' style={{color:'rgb(13, 53, 13)'}}>Strawberry Vanilla</Text>
         <Text variant='p' style={{color:'rgb(13, 53, 13)'}}>Ginger Lemon</Text>
 
     </div>
@@ -83,11 +82,11 @@ export const Footer = () => {
     <Text variant='h2' style={{color:'rgb(13, 53, 13)'}}>Social Media</Text>
     <div className={styles.links}>
 
-     <a href='https://www.instagram.com/' className={styles.link}><img src={Instagram} alt='Intagram Icon' className={styles['social-icon']}/></a>
+     <a href='https://www.instagram.com/' className={styles.link}><img src={Instagram} alt='Instagram' className={styles['social-icon']}/></a>
      <a href='https://www.facebook.com/' className={styles.link}><img src={Facebook} alt='Facebook Icon' className={styles['social-icon']}/></a>
      <a href='https://www.twitter.com/' className={styles.link}><img src={X} alt='X Icon' className={styles['social-icon']}/></a>
      <a href='https://za.linkedin.com/' className={styles.link}><img src={LinkedIn} alt='LinkedIn Icon' className={styles['social-icon']}/></a>
-     <a href='https://www.pinterest.com/' className={styles.link}><img src={Pintrest} alt='Pintrest Icon' className={styles['social-icon']}/></a>
+     <a href='https://www.pinterest.com/' className={styles.link}><img src={Pintrest} alt='Pinterest' className={styles['social-icon']}/></a>
 
 
     </div>

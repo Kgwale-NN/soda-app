@@ -33,7 +33,7 @@ The application uses reusable React components, TypeScript, and component-scoped
 
 ### Current functionality
 
-This version is a frontend showcase. The mobile menu opens and closes, and the footer includes links to social platforms. Shopping, product-price, “Read More”, and subscription buttons do not yet connect to a checkout or backend. Navigation links use placeholder destinations, and the email field does not submit or save subscriptions.
+This version is a responsive frontend showcase. Navigation and hero links jump to page sections. The mobile menu supports keyboard activation and Escape to close. Products display prices without a checkout. The email area is labelled as a preview and its subscription button is disabled until a service is connected. Email addresses are not saved.
 
 No backend server, database, API keys, or `.env` file is required to run the current app.
 
@@ -218,7 +218,6 @@ Then check the page in a browser at desktop and mobile widths, including the nav
 
 - Connect shopping buttons to product pages and a cart.
 - Add email validation and a subscription service.
-- Replace placeholder navigation with working destinations.
 - Improve keyboard access and accessible labels for interactive controls.
 - Add automated tests for navigation and form behaviour.
 

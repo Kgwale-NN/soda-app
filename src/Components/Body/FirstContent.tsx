@@ -1,9 +1,6 @@
-import React from 'react'
 import styles from './Body.module.css'
 import {Text} from '../Text/Text'
-import { Button } from '../Inputs/Button'
 import { ContentContainer } from '../ContentContainer'
-import { Subscribe } from '../Auth/Subscribe'
 
 
 
@@ -20,9 +17,8 @@ export const FirstContent = () => {
 
        <div className={styles['first-cont']}>
 
-      <Text variant='h1' style={{fontSize:80 ,color:'rgb(13, 53, 13)'}}>A New Kind</Text>
-      <Text variant='h1' style={{fontSize:80 ,color:'rgb(13, 53, 13)'}}>of Soda</Text>
-      <Button value='Shop OLIPOP' type='Button' className={styles.button} />
+      <Text variant='h1' style={{color:'rgb(13, 53, 13)'}}>A New Kind<br />of Soda</Text>
+      <a href="#flavours" className={styles.button}>Explore Flavours</a>
       
 
        </div>

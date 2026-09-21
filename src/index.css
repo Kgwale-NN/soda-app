@@ -1,26 +1,14 @@
-@font-face {
-    font-family: "ano-regular";
-    src: url('./assets/fonts/Ano-Regular/Ano-Regular.otf') format('otf');
-}
-
-@font-face {
-    font-family:"windsorEF" ;
-    src: url("./assets/fonts/windsoref/windsoref-extraboldcondensed.woff") format('woff');
-}
-p{
-    font-family: "ano-regular";
-}
-
-h1,h2,h3{
-    font-family: "windsorEF";
-}
-body{
-    font-family: Arial;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    overflow-x: hidden;
-}
+@font-face { font-family: ano-regular; src: url('./assets/fonts/Ano-Regular/Ano-Regular.otf') format('opentype'); font-display: swap; }
+@font-face { font-family: windsorEF; src: url('./assets/fonts/windsoref/windsoref-extraboldcondensed.woff') format('woff'); font-display: swap; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { margin: 0; color: #0d350d; font-family: ano-regular, Arial, sans-serif; line-height: 1.6; }
+h1, h2, h3 { font-family: windsorEF, Georgia, serif; line-height: 1.12; text-wrap: balance; }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+p { margin: 0 0 1rem; }
+img { display: block; max-width: 100%; height: auto; }
+button, input { font: inherit; }
+button, input[type='button'], input[type='submit'] { min-height: 44px; }
+a, button, input { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid #af420c; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }

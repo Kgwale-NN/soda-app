@@ -1,129 +1,15 @@
-footer{
-
-    bottom: 0;
-    width: 100vw;
-    min-height: 100px;
-    background-color: rgb(236, 236, 236);
-    margin-top: 0;
-    position: relative;
-    padding-bottom: 30px;
-    padding-top: 600px;
-    padding-left: 350px;
-
-}
-
-.footer-content{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: auto;
-    padding: 40px 50px;
-    max-width: 1200px;
-   margin-top: -300px;
-   margin-right: 900px;
-   gap: 170px;
-}
-
-.logo-icon{
-
-    width:100px;
-    height: 100px;
-
-}
-
-.brand-row{
-
-        display: flex;
-        gap: 30px;
-        
-}
-
-.brand-text {
-
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap:2px;
-
-    }
-
-    .brand-text h2{
-
-    margin: 0;
-        
-    }
-
-     .first-div{
-
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
-  padding-top: 18px;
-
-    }
-
-    .links{
-
-    display: flex;
-    gap: 20px ;
-
-}
-
-.social-icon{
-
-    width:30px;
-    height: 30px;
-
-    }
-
-    .link{
-
-        text-decoration: none;
-        cursor: pointer;
-
-
-}
-
-.flavours-section{
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 18px;
-
-}
-
-.information-section{
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 18px;
-
-}
-
-.flavours-section p{
-
-    margin: 0;
-}
-
-.flavours-section h2{
-
-    margin: 0;
-    padding-bottom: 10px;
-}
-
-.information-section p{
-
-    margin: 0;
-}
-
-.information-section h2{
-
-    margin: 0;
-    padding-bottom: 10px;
-}
-
+footer { width: 100%; background: #f1f0e8; padding-block: 48px; }
+.footer-content { display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(2, minmax(0, 1fr)); gap: 40px; }
+.first-div { min-width: 0; }
+.brand-row { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+.logo-icon { width: 64px; height: 64px; object-fit: contain; flex-shrink: 0; }
+.brand-text h2 { margin: 0; font-size: 1.7rem; }
+.flavours-section, .information-section { display: flex; flex-direction: column; gap: 8px; }
+.flavours-section h2, .information-section h2, .media h2 { margin: 0 0 16px; font-size: 1.5rem; }
+.flavours-section p, .information-section p { margin: 0; }
+.media { grid-column: 1 / -1; border-top: 1px solid #0d350d33; padding-top: 28px; }
+.links { display: flex; gap: 12px; flex-wrap: wrap; }
+.link { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid #0d350d33; border-radius: 50%; }
+.social-icon { width: 24px; height: 24px; object-fit: contain; }
+@media (max-width: 900px) { .footer-content { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; } .first-div { grid-column: 1 / -1; max-width: 480px; width: 100%; } }
+@media (max-width: 380px) { .footer-content { grid-template-columns: minmax(0, 1fr); } .brand-row { align-items: flex-start; } }

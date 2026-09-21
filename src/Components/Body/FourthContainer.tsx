@@ -1,5 +1,3 @@
-import React from 'react'
-import { ContentContainer } from '../ContentContainer'
 import styles from './Body.module.css'
 import { Text } from '../Text/Text'
 
@@ -15,7 +13,7 @@ import LemonOlipopGinger from  '../../assets/olipop-ginger-lemon.jpg'
 export const FourthContainer = () => {
   return (
 
-    <div className={styles['fourth-content-container']}>
+    <section id="benefits" aria-label="Subscription benefits" className={styles['fourth-content-container']}>
 
         <div className={styles['bullets-container']}>
 
@@ -68,6 +66,6 @@ export const FourthContainer = () => {
         </div>
 
 
-    </div>
+    </section>
   )
 }
