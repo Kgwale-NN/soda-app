@@ -1,4 +1,4 @@
 #app-container { width: 100%; min-height: 100vh; }
-#scrollable { padding-top: 76px; }
+#scrollable { padding-top: 77px; }
 .skip-link { position: fixed; top: 8px; left: 16px; z-index: 2000; padding: 10px 18px; background: white; color: #0d350d; transform: translateY(-160%); border-radius: 8px; }
 .skip-link:focus { transform: translateY(0); }
