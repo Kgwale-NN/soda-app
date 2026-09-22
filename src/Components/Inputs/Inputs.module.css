@@ -1,4 +1,4 @@
-.button { color: white; background: #012201; border-radius: 999px; border: none; padding: 12px 24px; min-height: 48px; cursor: pointer; }
+.button { composes: button from "./ActionButton.module.css"; }
 .input-container { min-width: 0; width: 100%; }
 .input { display: block; width: 100%; min-width: 0; min-height: 48px; padding: 12px 16px; font-size: 16px; border-radius: 12px; background: white; color: #012201; border: 1px solid #0d350d; }
 .input-error { color: #922b12; font-size: .875rem; }
