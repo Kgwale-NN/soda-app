@@ -23,7 +23,7 @@ export const FifthContainer = () => {
 
             <div className={styles['button-cont']}>
 
-            <a href="#subscribe" className={styles.button}>Stay Connected</a>
+            <a href="#subscribe" className={styles.button}>Subscribe &amp; Save</a>
 
             </div>
 

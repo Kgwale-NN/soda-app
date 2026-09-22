@@ -44,7 +44,7 @@ Open the preview URL printed in the terminal. Rebuild after editing source files
 - Full-height hero below the navigation, followed by ingredients, products, subscription benefits, and a footer.
 - Four product cards rendered from typed product data through a reusable `ProductCard` component.
 - Plain CSS with shared spacing variables, pastel product colours, and responsive layouts.
-- Navigation links scroll to sections on the same page.
+- Shop Online and Shop OLIPOP scroll to the flavour cards; Learn More scrolls to the ingredients section; Read More scrolls to the benefits section. Subscribe and Subscribe & Save scroll to the demo email form. Find In Store opens the official OLIPOP store locator.
 - At widths of 900px or below, navigation uses a menu button. The menu closes after selecting a link, pressing Escape, or moving focus outside the navigation. Escape returns focus to the menu button.
 - A skip-to-content link, visible keyboard focus styles, and reduced-motion support.
 - Required email input with browser email validation. A valid submission displays a demo message; it does **not** send or store the email or create a subscription.

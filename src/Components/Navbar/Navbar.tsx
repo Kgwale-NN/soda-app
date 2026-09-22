@@ -16,10 +16,10 @@ export const Navbar = () => {
           <span className={isOpen ? styles.open : ''} /><span className={isOpen ? styles.open : ''} /><span className={isOpen ? styles.open : ''} />
         </button>
         <div id="navigation-links" className={`${styles.links} ${isOpen ? styles.active : ''}`} onClick={() => setIsOpen(false)}>
-          <a href="#flavours" className={styles.link}>Explore Flavours</a>
-          <a href="#ingredients" className={styles.link}>Our Ingredients</a>
-          <a href="#benefits" className={styles.link}>The Benefits</a>
-          <a href="#subscribe" className={styles.button}>Stay Connected</a>
+          <a href="#flavours" className={styles.link}>Shop Online</a>
+          <a href="https://drinkolipop.com/pages/store-locator" className={styles.link}>Find In Store</a>
+          <a href="#ingredients" className={styles.link}>Learn More</a>
+          <a href="#subscribe" className={styles.button}>Subscribe</a>
         </div>
       </ContentContainer>
     </nav>

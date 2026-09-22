@@ -18,7 +18,7 @@ export const FirstContent = () => {
        <div className={styles['first-cont']}>
 
       <Text variant='h1' style={{color:'rgb(13, 53, 13)'}}>A New Kind<br />of Soda</Text>
-      <a href="#flavours" className={styles.button}>Explore Flavours</a>
+      <a href="#flavours" className={styles.button}>Shop OLIPOP</a>
       
 
        </div>
