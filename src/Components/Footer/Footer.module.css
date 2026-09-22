@@ -13,3 +13,6 @@ footer { width: 100%; background: #f1f0e8; padding-block: 48px; }
 .social-icon { width: 20px; height: 20px; object-fit: contain; }
 @media (max-width: 900px) { .footer-content { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; } .first-div { grid-column: 1 / -1; max-width: 480px; width: 100%; } .media { grid-column: 1 / -1; border-top: 1px solid #0d350d33; padding-top: 28px; } }
 @media (max-width: 380px) { .footer-content { grid-template-columns: minmax(0, 1fr); } .brand-row { align-items: flex-start; } }
+
+.link:hover { background: #0d350d15; border-radius: 6px; }
+@media (max-width: 900px), (pointer: coarse) { .link { flex-basis: 44px; width: 44px; height: 44px; } .links { flex-wrap: wrap; } }

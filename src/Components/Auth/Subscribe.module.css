@@ -6,3 +6,5 @@
 .button:hover { background: #286457; }
 .note { font-size: .875rem; margin: 0; }
 .note:empty { display: none; }
+
+@media (max-width: 900px), (pointer: coarse) { .input, .button { min-height: 44px; } }
