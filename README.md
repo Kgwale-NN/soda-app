@@ -1,228 +1,141 @@
-<div align="center">
-  <img src="src/assets/Logo.webp" alt="OLIPOP logo" width="180" />
+# Soda App - ReactTS UI Challenge
 
-  <h1>Soda App</h1>
-  <p><strong>A colourful, OLIPOP-inspired soda landing page.</strong></p>
-  <p>Built with React 19 · TypeScript 6 · Vite 8 · CSS Modules</p>
+A single-page OLIPOP-inspired landing page built with React, TypeScript, Vite, and plain CSS using CSS Modules. This educational project translates the supplied UI Challenge 8 design into reusable components.
 
-  <p>
-    <a href="#getting-started">Getting Started</a> ·
-    <a href="#features">Features</a> ·
-    <a href="#available-commands">Commands</a> ·
-    <a href="#project-structure">Project Structure</a>
-  </p>
-</div>
+## Quick start
 
----
-
-## About the project
-
-Soda App is a frontend project that recreates the look and feel of a soda brand's promotional website. It brings together bold typography, colourful product imagery, flavour cards, and subscription messaging in a single-page experience.
-
-The application uses reusable React components, TypeScript, and component-scoped CSS. Images and custom fonts are included in the repository.
-
-## Features
-
-- **Product-led hero section** featuring Strawberry Vanilla and a shopping call to action.
-- **Brand introduction** with an ingredients story and supporting imagery.
-- **Flavour showcase** featuring Ginger Lemon, Classic Grape, Orange Squeeze, and Tropical Punch.
-- **Subscription benefits section** with savings, shipping, and flexibility messaging.
-- **Responsive styling** with media queries for smaller screens and a toggleable mobile navigation menu.
-- **Footer** containing an email input, flavour information, and social links.
-- **Reusable UI components** for buttons, text, inputs, and content containers.
-
-### Current functionality
-
-This version is a responsive frontend showcase. Navigation and hero links jump to page sections. The mobile menu supports keyboard activation and Escape to close. Products display prices without a checkout. The email area is labelled as a preview and its subscription button is disabled until a service is connected. Email addresses are not saved.
-
-No backend server, database, API keys, or `.env` file is required to run the current app.
-
-## Tech stack
-
-| Technology | Purpose |
-| --- | --- |
-| React 19 | Component-based user interface |
-| TypeScript 6 | Typed application code |
-| Vite 8 | Development server and production bundling |
-| CSS Modules | Component-scoped styling |
-| ESLint 10 | Code linting |
-| npm | Dependency installation and project commands |
-
-## Getting started
-
-### 1. Install the prerequisites
-
-You will need:
-
-- **Node.js 24.x** with npm. This version satisfies the Node engine requirements recorded in the project's lockfile.
-- **Git**, if you want to clone the repository.
-- A web browser and a code editor of your choice.
-
-Check that Node.js and npm are available:
-
-```sh
-node --version
-npm --version
-```
-
-### 2. Open the project
-
-Clone the repository and enter the application folder:
+Prerequisites: **Node.js 24.x**, npm (included with Node.js), and Git to clone the repository.
 
 ```sh
 git clone https://github.com/Kgwale-NN/soda-app.git
 cd soda-app
-```
-
-If you already have the project on this Windows computer, open PowerShell and use:
-
-```powershell
-cd "C:\Users\LEARNER\Documents\mlab\task-1\soda-app"
-```
-
-> Run all commands below inside `soda-app`, the folder containing `package.json`.
-
-### 3. Install dependencies
-
-```sh
 npm ci
-```
-
-This installs the dependency versions recorded in `package-lock.json`, making setup reproducible. Use `npm install` when intentionally adding or updating dependencies, and keep the resulting lockfile changes with your code.
-
-### 4. Start the application
-
-```sh
 npm run dev
 ```
 
-Open the local URL printed in the terminal, usually:
+Open the URL printed in the terminal, usually **http://localhost:5173**. If that port is busy, Vite prints a different port. Leave the terminal running while using the app; press **Ctrl+C** to stop it.
 
-```text
-http://localhost:5173
-```
+Already downloaded the project? Open a terminal in the folder containing `package.json`, then run `npm ci` and `npm run dev`.
 
-Vite updates the page as you edit and save source files. If the default port is busy, use the URL Vite prints instead. Press **Ctrl+C** in the terminal to stop the server.
+No backend, database, API keys, or `.env` file is needed.
 
-## Available commands
+## Commands
 
-| Command | Description |
+| Command | Purpose |
 | --- | --- |
-| `npm ci` | Install dependencies using the existing lockfile |
-| `npm run dev` | Start the development server |
-| `npm run build` | Run the TypeScript build, then create a production bundle |
-| `npm run preview` | Serve the production bundle locally for review |
-| `npm run lint` | Run ESLint against the project |
+| `npm ci` | Install the versions recorded in `package-lock.json` |
+| `npm run dev` | Start the development server with live updates |
+| `npm run lint` | Check source code with ESLint |
+| `npm run build` | Run TypeScript checks and generate the production site in `dist/` |
+| `npm run preview` | Preview the existing production build locally |
 
-There is currently no automated test command configured in `package.json`.
-
-## Production build
-
-Create the production bundle:
-
-```sh
-npm run build
-```
-
-Once the build succeeds, Vite places the bundled website in `dist/`. Preview it locally:
-
-```sh
-npm run preview
-```
-
-Open the URL printed in the terminal. Preview serves the built files, so run the build again after making changes you want to review.
-
-For static hosting, use these project settings:
-
-| Setting | Value |
-| --- | --- |
-| Project root | The directory containing `package.json` (`soda-app` in the local task folder) |
-| Install command | `npm ci` |
-| Build command | `npm run build` |
-| Publish/output directory | `dist` |
-
-The preview command is intended for local verification. Publish the contents of `dist/` through your static hosting service. If hosting under a URL subdirectory, configure Vite's `base` setting in `vite.config.ts` and review the root-relative navigation links before building.
-
-## Project structure
-
-```text
-soda-app/
-├── public/                      # Static public assets
-├── src/
-│   ├── assets/                  # Product images, logos, icons, and fonts
-│   ├── Components/
-│   │   ├── Auth/                # Subscription input and button layout
-│   │   ├── Body/                # Hero, ingredients, products, and benefit sections
-│   │   ├── Footer/              # Footer layout and social links
-│   │   ├── Inputs/              # Shared button and text-input components
-│   │   ├── Navbar/              # Navigation and mobile menu
-│   │   ├── Text/                # Shared typography component
-│   │   └── ContentContainer.tsx # Shared content wrapper
-│   ├── App.tsx                  # Assembles the page sections
-│   ├── App.css                  # Application layout styling
-│   ├── index.css                # Global styles
-│   └── main.tsx                 # React entry point
-├── index.html                   # HTML entry document
-├── eslint.config.js             # ESLint configuration
-├── package.json                 # Dependencies and npm scripts
-├── package-lock.json            # Locked dependency versions
-├── tsconfig*.json               # TypeScript configuration
-├── vite.config.ts               # Vite configuration
-└── README.md
-```
-
-## Customising the app
-
-| To change… | Start here |
-| --- | --- |
-| Page composition | `src/App.tsx` |
-| Hero text and featured image | `src/Components/Body/FirstContent.tsx` |
-| Ingredients story | `src/Components/Body/SecondContainer.tsx` |
-| Flavours, images, and displayed prices | `src/Components/Body/ThirdContainer.tsx` |
-| Subscription benefits | `src/Components/Body/FourthContainer.tsx` |
-| Subscription promotion | `src/Components/Body/FifthContainer.tsx` |
-| Navigation links and mobile menu | `src/Components/Navbar/Navbar.tsx` |
-| Footer content and social links | `src/Components/Footer/Footer.tsx` |
-| Subscription form layout | `src/Components/Auth/Subscribe.tsx` |
-| Section colours, spacing, and responsive layouts | `src/Components/Body/Body.module.css` |
-| Global styles and fonts | `src/index.css` and `src/assets/fonts/` |
-
-Most component folders include their own `.module.css` file. Update those files when changing the appearance of a specific component.
-
-## Troubleshooting
-
-| Problem | What to do |
-| --- | --- |
-| `node` or `npm` is not recognised | Install Node.js with npm, then reopen your terminal. |
-| PowerShell blocks `npm.ps1` | Use `npm.cmd ci` or `npm.cmd run dev` in place of the corresponding `npm` command. |
-| npm cannot find `package.json` | Check that your terminal is inside the `soda-app` folder. |
-| Unsupported Node engine warning | Check `node --version` and use Node.js 24.x for this project. |
-| Dependencies are missing | Run `npm ci` from the application folder. |
-| The default development URL does not work | Open the exact URL printed by Vite; it may be using a different port. |
-| Production preview is missing or out of date | Run `npm run build` successfully before `npm run preview`. |
-| A build or lint command fails | Read the reported file and line number, fix the issue, and rerun that command. |
-| A shopping or subscription button does nothing | These controls are currently placeholders; connect the intended behaviour in the component. |
-
-## Development checks
-
-Before submitting changes, run:
+To check a production build:
 
 ```sh
 npm run lint
 npm run build
+npm run preview
 ```
 
-Then check the page in a browser at desktop and mobile widths, including the navigation toggle, product layout, images, and footer. These are the project's verification commands; this README does not imply that the current code passes them.
+Open the preview URL printed in the terminal. Rebuild after editing source files to update the preview. There is currently no automated test script.
 
-## Possible next steps
+## Features and current behaviour
 
-- Connect shopping buttons to product pages and a cart.
-- Add email validation and a subscription service.
-- Improve keyboard access and accessible labels for interactive controls.
-- Add automated tests for navigation and form behaviour.
+- Full-height hero below the navigation, followed by ingredients, products, subscription benefits, and a footer.
+- Four product cards rendered from typed product data through a reusable `ProductCard` component.
+- Plain CSS with shared spacing variables, pastel product colours, and responsive layouts.
+- Navigation links scroll to sections on the same page.
+- At widths of 900px or below, navigation uses a menu button. The menu closes after selecting a link, pressing Escape, or moving focus outside the navigation. Escape returns focus to the menu button.
+- A skip-to-content link, visible keyboard focus styles, and reduced-motion support.
+- Required email input with browser email validation. A valid submission displays a demo message; it does **not** send or store the email or create a subscription.
+- Larger subscription controls and social-link touch targets on smaller screens and devices with a coarse pointer.
 
-## Credits and licence
+### Limitations
 
-This project uses OLIPOP branding and product imagery as part of its visual design. Those brand assets belong to their respective owners.
+This is a frontend UI demonstration. Product prices are display-only; there is no cart or checkout. Footer information and flavour names are text, and social icons link to the platforms' homepages. Product carousel controls from the reference are not implemented. A real mailing-list service is not connected.
 
-No licence file is currently included in the repository. Add an appropriate licence before distributing the project under specific reuse terms.
+## Project structure
+
+```text
+src/
+  assets/                       Product images, icons, logos, and fonts
+  Components/
+    Auth/Subscribe.tsx          Demo email form and validation feedback
+    Body/
+      FirstContent.tsx          Hero
+      SecondContainer.tsx       Ingredients section
+      ThirdContainer.tsx        Product data and card rendering
+      ProductCard.tsx           Reusable typed product card
+      FourthContainer.tsx       Subscription benefits
+      FifthContainer.tsx        Subscription promotion
+      Body.module.css           Section and product styling
+    Footer/                     Footer content and layout
+    Inputs/                     Input helpers (not used by the current form)
+    Navbar/                     Navigation and mobile menu
+    Text/                       Reusable text component
+    ContentContainer.tsx        Shared content width and side padding
+  App.tsx                       Page composition
+  App.css                       Application layout and navigation offset
+  index.css                     Fonts, shared spacing variables, global styles
+  main.tsx                      React entry point
+```
+
+CSS Modules are ordinary CSS files scoped to components; no CSS framework is used.
+
+## Working on the design
+
+- Edit product names, images, prices, and colour-class assignments in `ThirdContainer.tsx`.
+- Edit shared card markup in `ProductCard.tsx` to update all four cards together.
+- Edit `--page-gutter`, `--content-width`, and `--section-space` in `src/index.css` to adjust shared spacing.
+- Use margin for space outside an element and padding for space inside it.
+- Use each component's `.module.css` file for its styles. Section styles live in `Body.module.css`.
+
+## Manual verification
+
+Recent browser checks covered 320 x 568, 390 x 844, 768 x 1024, 844 x 390 (landscape), and 1440 x 900 viewports, with no horizontal page overflow observed. The mobile menu opened, closed with Escape, and closed after selecting a link. Mobile subscription controls and social links were measured at 44px tall. These browser checks are not a guarantee for every device.
+
+After future changes:
+
+1. Run `npm run lint` and `npm run build`.
+2. Check the widths listed above for clipped text, overlapping elements, and horizontal scrolling.
+3. Open the mobile menu, follow a section link, and confirm the destination is below the fixed navigation.
+4. Reopen the menu and press Escape; verify focus returns to the menu button.
+5. Use Tab to check visible focus and the skip-to-content link.
+6. Submit an empty email, an invalid email, and a valid test address. Invalid values should be rejected; a valid value should show demo feedback without creating a subscription.
+7. Compare desktop spacing, colours, typography, and card proportions against the supplied reference.
+
+## Deployment and submission
+
+Use the following settings for a static hosting provider:
+
+| Setting | Value |
+| --- | --- |
+| Root directory | Folder containing `package.json` |
+| Install command | `npm ci` |
+| Build command | `npm run build` |
+| Output directory | `dist` |
+
+For deployment under a subdirectory, configure Vite's `base` in `vite.config.ts` to match that path before building.
+
+A publicly accessible deployment URL has not yet been verified in this review. Before submitting, add the verified production URL here and open it in a signed-out or private browser window. The reviewer must be able to view the page without an account or password. `localhost` and `npm run preview` are local tools, not public hosting.
+
+## Commit workflow
+
+Make one focused commit per completed improvement. Review `git diff`, stage the relevant files, and use a message that explains the change. Push completed commits to GitHub so reviewers can follow the work. Do not recreate or backdate earlier development history.
+
+## Troubleshooting
+
+| Problem | Solution |
+| --- | --- |
+| `node` or `npm` is not recognised | Install Node.js with npm, then reopen the terminal. |
+| PowerShell blocks `npm.ps1` | Use `npm.cmd ci` and `npm.cmd run dev`. |
+| npm cannot find `package.json` | Open the terminal in the application folder. |
+| Unsupported Node version | Check `node --version`; use Node.js 24.x for this project. |
+| Missing dependencies | Run `npm ci`. |
+| Local URL does not open | Keep the development server running and use its printed URL. |
+| Preview is missing or outdated | Run `npm run build` before `npm run preview`. |
+| Subscription does not send email | This is intentional demo behaviour; a mailing-list integration is required for real subscriptions. |
+
+## Credits
+
+The layout is based on the supplied UI Challenge 8 reference. OLIPOP branding and product imagery belong to their respective owners. No licence file is currently included in this repository.
